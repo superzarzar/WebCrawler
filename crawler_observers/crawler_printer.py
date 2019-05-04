@@ -16,4 +16,4 @@ class CrawlerPrinter(CrawlerObserver):
         crawler_image_references = self._image_src_to_crawler_image_references[image_src]
         crawler_image_references.add_referrer(referrer)
         if len(crawler_image_references) > 1:
-            print(self._image_src_to_crawler_image_references[image_src])
+            print(crawler_image_references)

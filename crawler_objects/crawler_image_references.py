@@ -7,7 +7,7 @@ class CrawlerImageReferences:
         self._image_source = image_src
         self._referrers: List[CrawlerLink] = []
 
-    def add_referrer(self, referrer: CrawlerLink):
+    def add_referrer(self, referrer: CrawlerLink) -> None:
         self._referrers.append(referrer)
 
     def __str__(self):
